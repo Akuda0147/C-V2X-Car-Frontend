@@ -47,7 +47,7 @@ def process_and_send_results(boxes, roomID):
 # Connect to the Socket.IO server
 sio.connect(cam_url)
 
-def thread_callback(roomID, camSource, count):
+def thread_callback(roomID, camSource):
     # Load YOLOv8 model
     model = YOLO("yolov8n.pt")  # Replace with the correct path or configuration
     model.to(device)
@@ -97,14 +97,14 @@ def thread_callback(roomID, camSource, count):
 # roomID = f"Room{carID}{camID}"
 # thread_callback(roomID,camSource+2)
 
-camSource = 0
+camSource = 2
 # thr = threading.Thread(target=thread_callback, args=[camSource,camSource+2])
 # thr.start()
 for camera in cameras:
     camID = camera["id"]
     # Define the roomID (replace with the actual roomID)
     roomID = f"Room{carID}{camID}"
-    thr = threading.Thread(target=thread_callback, args=[roomID,camSource+3,0])
+    thr = threading.Thread(target=thread_callback, args=[roomID,camSource])
     thr.start()
     camSource+=1
 

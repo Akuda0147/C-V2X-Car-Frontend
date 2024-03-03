@@ -181,7 +181,7 @@ export default function Home() {
 		<div className="home-container">
 			<div className="left-container">
 				<div>
-				<LoadScript googleMapsApiKey="MY_GOOGLE_MAPS_API_KEY">
+				<LoadScript googleMapsApiKey="AIzaSyAZiiFYRd5qAojQ5AAvah0ewzd8NJHivMc">
 						<GoogleMap
 							mapContainerStyle={{width: 1071, height: 1002}}
 							options={{ disableDefaultUI: true }}
@@ -192,10 +192,10 @@ export default function Home() {
 								icon={{url: '/car_pin.svg'}}
 								position={location}
 							/>
-							<Marker
+							{/* <Marker
 								icon={{url: '/rsu_pin.svg'}}
 								position={rsuLocation}
-							/>
+							/> */}
 						</GoogleMap>
 				</LoadScript>
 				</div>
@@ -217,7 +217,7 @@ export default function Home() {
 								<StreamVideo 
 								carID={`65ac9720191a85b6842de0ec`}
 								camNumber={"65940703ce9bc3c043a77615"}
-								sourceNumber={0}
+								sourceNumber={2}
 								isShowObjectDetection={isObjectDetectionOn}
 								isStream={true}/>
 							</SwiperSlide>
@@ -226,7 +226,7 @@ export default function Home() {
 								<StreamVideo 
 								carID={`65ac9720191a85b6842de0ec`}
 								camNumber={"65b6ff827c8483c5c4a474a5"}
-								sourceNumber={0}
+								sourceNumber={3}
 								isShowObjectDetection={isObjectDetectionOn}
 								isStream={true}/>
 							</SwiperSlide>
@@ -235,7 +235,7 @@ export default function Home() {
 								<StreamVideo 
 								carID={`65ac9720191a85b6842de0ec`}
 								camNumber={"65b6ff927c8483c5c4a474ab"}
-								sourceNumber={0}
+								sourceNumber={4}
 								isShowObjectDetection={isObjectDetectionOn}
 								isStream={true}/>
 							</SwiperSlide>
@@ -244,7 +244,7 @@ export default function Home() {
 								<StreamVideo 
 								carID={`65ac9720191a85b6842de0ec`}
 								camNumber={"65b6ff9c7c8483c5c4a474b1"}
-								sourceNumber={0}
+								sourceNumber={5}
 								isShowObjectDetection={isObjectDetectionOn}
 								isStream={true}/>
 							</SwiperSlide>
@@ -265,7 +265,7 @@ export default function Home() {
 								<StreamVideo 
 								carID={`65ac9720191a85b6842de0ec`}
 								camNumber={"65940703ce9bc3c043a77615"}
-								sourceNumber={0}
+								sourceNumber={2}
 								isShowObjectDetection={isObjectDetectionOn}
 								isStream={false}/>
 							</SwiperSlide>
@@ -273,7 +273,7 @@ export default function Home() {
 								<StreamVideo 
 								carID={`65ac9720191a85b6842de0ec`}
 								camNumber={"65b6ff827c8483c5c4a474a5"}
-								sourceNumber={0}
+								sourceNumber={3}
 								isShowObjectDetection={isObjectDetectionOn}
 								isStream={false}/>
 							</SwiperSlide>
@@ -281,7 +281,7 @@ export default function Home() {
 								<StreamVideo 
 								carID={`65ac9720191a85b6842de0ec`}
 								camNumber={"65b6ff927c8483c5c4a474ab"}
-								sourceNumber={0}
+								sourceNumber={4}
 								isShowObjectDetection={isObjectDetectionOn}
 								isStream={false}/>
 							</SwiperSlide>
@@ -289,7 +289,7 @@ export default function Home() {
 								<StreamVideo 
 								carID={`65ac9720191a85b6842de0ec`}
 								camNumber={"65b6ff9c7c8483c5c4a474b1"}
-								sourceNumber={0}
+								sourceNumber={5}
 								isShowObjectDetection={isObjectDetectionOn}
 								isStream={false}/>
 							</SwiperSlide>
